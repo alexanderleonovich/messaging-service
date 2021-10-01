@@ -11,6 +11,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class MessagingServiceApplication {
 
     public static void main(String[] args) {
+        log.info("Application started");
         ConfigurableApplicationContext context = SpringApplication.run(MessagingServiceApplication.class, args);
         MessagingClient client = context.getBean(MessagingClient.class);
         client.postMessages();
