@@ -17,12 +17,12 @@
         <dependency>
             <groupId>com.leonovich</groupId>
             <artifactId>messaging-service-model</artifactId>
-            <version>${version}</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.leonovich</groupId>
             <artifactId>messaging-service-server</artifactId>
-            <version>${version}</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 </project>

@@ -25,8 +25,8 @@
     </modules>
 
     <properties>
-        <revision>0.0.2-SNAPSHOT</revision>
-        <java.version>11</java.version>
+        <revision>0.0.3-SNAPSHOT</revision>
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>
@@ -50,4 +50,24 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <addClasspath>true</addClasspath>
+                                <classpathPrefix>lib/</classpathPrefix>
+                                <mainClass>com.leonovich.messagingservice.MessagingServiceApplication</mainClass>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
